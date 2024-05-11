@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kastamonu</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0">Kastamonu</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Anasayfa</a>
+                <a href="about.html" class="nav-item nav-link">Tarihçe</a>
+                <a href="service.html" class="nav-item nav-link">Tarihi Yerler</a>
+                <a href="product.html" class="nav-item nav-link">Yöresel Lezzetler</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="gallery.html" class="dropdown-item">Fotoğraflarla Kastamonu</a>
+                        <a href="feature.html" class="dropdown-item">Sayılarla Kastamonu</a>
+                        <a href="team.html" class="dropdown-item">Yöresiyle Kastamonu</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">İletişim</a>
+            </div>
+            <div class="border-start ps-4 d-none d-lg-block">
+                <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8 text-start">
+                                    <p class="fs-4 text-white">Yeşilin ve Mavinin Harmanlandığı Yer</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Karadenizin İncisi</h1>
+                                    <a href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/about.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Keşfet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-end">
+                                    <p class="fs-4 text-white">Huzurun Yeşille Buluştuğu Yer</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight"> Doğanın Kalbi</h1>
+                                    <a href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/about.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Keşfet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/service-4.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.7s">
+                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start text-primary pe-3">Tarihçe</p>
+                    <h1 class="mb-4">Geçmişin İzleri: Kastamonu'da Yolculuk</h1>
+                    <p class="mb-4">Erken Türk-İslam dönemi kent ve kentlilik kimliğinin ilk geliştiği yerlerden olan Evliyalar Şehri'ne hoş geldiniz.
+                        Kuzey Anadolu Dağları ve Kızılırmak gibi unsurların sarmaladığı, yaşamla iç içe ve korunaklı bu kent, her daim doğasıyla Anadolu uygarlıklarını cezbetmiştir.
+                        <br><br>Karadeniz Bölgesi’nin yer alan Kastamonu, yeşil ile mavinin her tonunu kucaklayarak sizi saran ve her adımınızda kadim kültürünü hissettiren sımsıcak bir kenttir.
+                       <br> <br>Konakları, tarihin izini taşıyan hanları, cami ve külliyeleri; şehrin kültürel kimliğinin korunduğunun en güzel izleridir.  Osmanlı’da uç merkezi olan Kastamonu, tabii güzellikleri yanında tarihî eserler ve türbelerin sıklığı bakımından nadir yörelerden birisidir. Bu nedenle, “Evliyalar Şehri” olarak da bilinmektedir.
+                      <br>  <br>Kültürel mirasın zenginliğini barındıran leziz yöresel mutfağı, Küre ve Ilgaz Dağları’nın oluşturduğu vadi, kanyon, şelaleler, Karadeniz’de uzanan 170 kilometrelik sahilinde barındırdığı el değmemiş koylar, ormanlarının flora ve fauna zenginliği, endemik çeşitliliği ile Kastamonu; farklı keşif deneyimlerini bir arada sunan zengin bir destinasyondur.
+                    </p>
+
+                    </div>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/about.html">Daha Fazlası</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title bg-white text-start text-primary pe-3">Sayılarla Kastamonu</p>
+                    <h1 class="mb-4">Kastamonu'nun Coğrafi ve Demografik Özeti</h1>
+                    <p class="mb-4">Kastamonu, Türkiye'nin Karadeniz Bölgesi'nde yer alan ve hem tarihi zenginlikleri hem de doğal güzellikleriyle öne çıkan bir şehirdir. Şehir, 13.108 kilometrekarelik geniş bir yüzölçümü ile Türkiye'nin coğrafi olarak büyük illerinden biridir. Karadeniz'e olan kıyısı, Kastamonu'ya zengin bir biyolojik çeşitlilik ve serin bir iklim sunar. İl sınırları içinde yaklaşık 388.990 kişi yaşamaktadır ve nüfus yoğunluğu 28 kişi/km² civarındadır. Kastamonu'nun ekonomisi tarım, hayvancılık ve ormancılığa dayanırken, turizm de giderek artan bir öneme sahiptir. Bölgede, yaşlı ormanları, yemyeşil yaylaları ve benzersiz doğal alanları ile 11 milli park ve tabiat koruma alanı bulunmaktadır.
+                    <br><br>Tarihi zenginlikleri ile bilinen Kastamonu'da, 12. yüzyıldan kalma Kastamonu Kalesi ve türbe, cami gibi Osmanlı ve Selçuklu dönemi eserleri dikkat çeker. Coğrafi yapısı, bölgenin farklılık gösteren doğal özelliklerini yansıtır; kuzeyde Karadeniz'in dalgalı kıyıları, güneyde ise Ilgaz Dağları'nın muhteşem manzaraları yer alır. Kastamonu'nun merkezi ise 100.000'in üzerinde bir nüfusa sahip olup, modern altyapısı ve geleneksel yapılarıyla tarihi ile çağdaşlığı bir arada sunar.
+                    <br><br>Kastamonu, köklü bir tarih ve canlı bir kültürle Türkiye'nin kendine has bölgelerinden biri olmaya devam etmektedir.              
+                    <br> </p>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/feature.html">Daha Fazlası</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/ilce.svg" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">19</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">İlçe Sayısı</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/koy.svg" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">1054</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Köy Sayısı</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/nufus.svg" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">388990</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Nüfus</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/yuzolcum.svg" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">13108.00 </h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Yüz Ölçümü</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="img/banner.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="img/banner-1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">Bandurma: Kastamonu'nun Geleneksel Lezzeti</h2>
+                            <p class="text-white mb-4">
+                                İnce dilimlenmiş kuru etin, yufka ya da ekmek dilimleri arasında katmanlar şeklinde yerleştirilip üzerine tereyağı ve et suyu dökülmesiyle hazırlanan bu yemek, geleneksel Türk mutfağının özgün bir örneğidir. </p>                      
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/product.html">Devamı</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="img/banner-2.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">Etli Ekmek: Kastamonu'nun Eşsiz Lezzeti</h2>
+                            <p class="text-white mb-4">İnce açılmış hamurun üzerine özenle hazırlanan et harcının yerleştirilmesiyle yapılan bu yemek, odun fırınında pişirilerek eşsiz bir tat elde edilir. Etli Ekmek, yumuşak hamurun ve baharatlarla zenginleştirilmiş etin mükemmel uyumunu sunar. </p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/product.html">Devamı</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Tarihi Yerler</p>
+                <h1 class="mb-5">Kastamonu'nun Kültürel Mirası</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Kastamonu Kalesi</h4>
+                            <p class="mb-4">Kastamonu Kalesi, şehrin kalbinde yükselen tarihi bir yapı olarak dikkat çeker. İnşa tarihi Bizans dönemine kadar uzanan kale, Osmanlı İmparatorluğu boyunca da önemini korumuştur. Şehir merkezindeki bu etkileyici yapı, muhteşem manzarasıyla ziyaretçilere görsel bir şölen yaşatır. Kastamonu Kalesi, hem tarih meraklıları hem de şehrin kültürel dokusunu keşfetmek isteyenler için mutlaka görülmesi gereken bir noktadır.</p> 
+                            <a class="btn btn-square rounded-circle" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/service.html"><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/tarihi_2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/tarihi_2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Kastamonu Saat Kulesi </h5>
+                            <p class="mb-4">Kastamonu Saat Kulesi, 1885 yılında inşa edilen ve şehrin siluetini tamamlayan önemli bir simgedir. Osmanlı döneminin karakteristik mimarisini yansıtan kule, Kastamonu'nun çeşitli bölgelerinden rahatça görülebilir. Hem tarihi hem de estetik değeri olan bu yapı, şehri ziyaret edenler için popüler bir buluşma noktasıdır. Saat Kulesi, Kastamonu'nun kültürel mirasını keşfetmek isteyenler için görülmesi gereken yerlerden biridir.</p>
+                            <br><a class="btn btn-square rounded-circle" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/service.html"><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/tarihi_3.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/tarihi_3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Kastamonu Arkeoloji Müzesi</h5>
+                            <p class="mb-4">Kastamonu Arkeoloji Müzesi, Selçuklu dönemi eseri olan Atabeygazi Camii'nin restore edilmesiyle oluşturulan müze, prehistorik dönemden Bizans ve Osmanlı dönemine uzanan geniş bir koleksiyona sahiptir. Kastamonu ve çevresindeki arkeolojik buluntuların sergilendiği bu müze, tarihi keşfetmek ve geçmişe dair derin bir anlayış kazanmak için ideal bir yerdir. Kastamonu'nun tarihini ve kültürel zenginliklerini keşfetmek isteyenler için görülmesi gereken yerlerden biridir.</p>
+                            <a class="btn btn-square rounded-circle" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/service.html"><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Gallery Start -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3"></p>
+                <h1 class="mb-5"><a href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/gallery.html" title="Manzaralar" style="color: #404A3D;">Manzaralar</a></h1>
+
+
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <a class="d-block" href="img/g9.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="img/g9.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="d-block" href="img/g1.jpeg" data-lightbox="gallery">
+                                <img class="img-fluid" src="img/g1.jpeg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <a class="d-block" href="img/g4.jpeg" data-lightbox="gallery">
+                                <img class="img-fluid" src="img/g4.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="d-block" href="img/g7.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="img/g7.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <a class="d-block" href="img/g10.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="img/g10.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="d-block" href="img/g5.jpeg" data-lightbox="gallery">
+                                <img class="img-fluid" src="img/g5.jpeg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <a class="d-block" href="img/g2.jpeg" data-lightbox="gallery">
+                                <img class="img-fluid" src="img/g2.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="d-block" href="img/g8.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="img/g8.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+
+
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Hızlı Bağlantılar</h5>
+                <a class="btn btn-link" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/about.html">Tarihçe</a>
+                <a class="btn btn-link" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/service.html">Tarihi Yerler</a>
+                <a class="btn btn-link" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/product.html">Yöresel Lezzetler</a>
+                <a class="btn btn-link" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/gallery.html">Fotoğraflarla Kastamonu</a>
+                <a class="btn btn-link" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/feature.html">Sayılarla Kastamonu</a>
+                <a class="btn btn-link" href="file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/team.html">Yöresiyle Kastamonu</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">İletişim</h5>
+                <p class="mb-1">e-Mail</p>
+                <h6 class="text-light">sor@kastamonu.com</h6>
+                <p class="mb-1">Telefon Hattı</p>
+                <h6 class="text-light">0366 xxxx</h6>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Bülten</h5>
+                <p>Kastamonu bültene kayıt olup, yeni rotalardan haberdar olun.</p>
+                <div class="position-relative w-100">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" placeholder="email adresi giriniz">
+                    <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2" onclick="redirectTo404()">Kayıt Ol</button> <!-- Yönlendirme JavaScript ile -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- JavaScript -->
+<script>
+function redirectTo404() {
+    // Yönlendirme yapmak için dosya yolu
+    window.location.href = "file:///C:/Users/ALEYNA/Desktop/deneme2/dairy-website-template/404.html"; 
+}
+</script>
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">Kastamonu</a>, Bütün hakları saklıdır.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://www.linkedin.com/in/zeynepaleynayilmaz/">ZAY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
