@@ -213,14 +213,17 @@
 <!-- Footer End -->
 
 <script>
-    if (typeof document === "undefined") {
-        document.write("<div>Geçerli mail adresi giriniz</div>");
-    } 
-    else {
-        function redirectTo404() {
-            window.location.href = "/404.html"; 
+    function checkAndRegister() {
+        var emailInput = document.getElementById("emailInput").value;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailPattern.test(emailInput)) {
+            // Geçerli bir e-posta adresi girildiyse, burada kayıt işlemi yapabilirsiniz.
+            alert("Kaydınız başarıyla yapıldı!"); // Örnek olarak bir bildirim gösteriyoruz
+        } else {
+            // Geçerli bir e-posta adresi girilmediyse
+            alert("Geçerli bir e-posta adresi giriniz");
         }
-        redirectTo404(); // 404.html'e yönlendirme işlemi
     }
 
 function redirectTotestimonial() {
