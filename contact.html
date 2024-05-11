@@ -212,12 +212,16 @@
 </div>
 <!-- Footer End -->
 
-<!-- JavaScript -->
 <script>
-function redirectTo404() {
-    // Yönlendirme yapmak için dosya yolu
-    window.location.href = "/404.html"; 
-}
+    if (typeof document === "undefined") {
+        document.write("<div>Geçerli mail adresi giriniz</div>");
+    } 
+    else {
+        function redirectTo404() {
+            window.location.href = "/404.html"; 
+        }
+        redirectTo404(); // 404.html'e yönlendirme işlemi
+    }
 
 function redirectTotestimonial() {
     // Yönlendirme yapmak için dosya yolu
